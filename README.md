@@ -1,1 +1,10 @@
 # Predicting-sensory-evaluation-of-spinach-freshness-using-ML
+This data come from https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0248769.
+
+When buying fruits and vegetables, people take into account a number of factors, including their visual impression of freshness. Panel testing, however, is costly and time-consuming for assessing food goods. This study assessed a nondestructive, image processing-based method for classifying spinach freshness. 
+
+Using a smartphone camera, pictures of spinach leaves were captured after varying amounts of storage. These photos were used by twelve sensory panels to rate the freshness of spinach at one of four levels. The real label was determined by using the rounded average of the twelve panel evaluations. After the backdrop was eliminated, the spinach image was transformed into hue, saturation, and value (HSV), grey scale, and CIE-Lab colour space (L*a*b*). As colour features, the mean, minimum, and standard deviation of each colour component in the spinach leaf were retrieved. Local features were extracted using the bag-of-words of key points from Oriented FAST (Features from Accelerated Segment Test) and Rotated BRIEF (Binary Robust Independent Elementary Features). 
+
+Machine learning models were trained to identify freshness levels using feature combinations taken from the spinach photos. 
+
+Four colour characteristics had a positive connection (0.5 < r < 0.6) in the correlation study between the extracted features and the sensory evaluation score, while six clusters in the local features had a negative correlation (‒0.6 < r < 0.5). Similar to the individual panel evaluations, the support vector machine classifier and artificial neural network method correctly classified spinach samples with an overall accuracy of 70% in four classes, 77% in three classes, and 84% in two classes. Our results suggest that the existing non-trained panel freshness evaluations could be replaced with a model based on artificial neural networks and support vector machine classifiers.
